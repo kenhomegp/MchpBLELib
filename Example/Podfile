@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MchpBLELib_Tests' do
+  pod 'MchpBLELib', :path => '../'
+  
+  
+end

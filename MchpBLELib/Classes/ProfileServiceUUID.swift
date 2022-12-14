@@ -1,0 +1,26 @@
+//
+//  BLEService.swift
+//  BleUARTLib
+//
+//  Created by WSG Software on 2021/7/21.
+//
+
+import Foundation
+import CoreBluetooth
+
+struct ProfileServiceUUID {
+    //Microchip Transparent Service
+    static let MCHP_PROPRIETARY_SERVICE = CBUUID(string: "49535343-FE7D-4AE5-8FA9-9FAFD205E455")
+    static let MCHP_TRANS_RX = CBUUID(string: "49535343-1E4D-4BD9-BA61-23C647249616")
+    static let MCHP_TRANS_TX = CBUUID(string: "49535343-8841-43F4-A8D4-ECBE34729BB3")
+    static let MCHP_TRANS_CTRL = CBUUID(string: "49535343-4C8A-39B3-2F49-511CFF073B7E")
+    static let MCHP_TRCBP_SERVICE = CBUUID(string: "49535343-2120-45FC-BDDB-E8A01AEDEC50")
+    static let MCHP_TRCBP_CTRL = CBUUID(string: "49535343-0284-18AE-1E46-35E91AF7D03C")
+    static let MCHP_TRCBP_CHAR = CBUUID(string: "49535343-C2DB-4991-9A9F-68C13B25DD1F")
+    
+    //OTA Service
+    static let MCHP_OTA_SERVICE = CBUUID(string: "4D434850-253D-46B3-9923-E61B8E8215D7")
+    static let MCHP_OTA_FEATURE = CBUUID(string: "4D434850-22E4-4246-AF03-0C4A2F906358")
+    static let MCHP_OTA_DATA = CBUUID(string: "4D434850-34D9-40A6-BA7E-56F57C8CD478")
+    static let MCHP_OTA_CONTROL = CBUUID(string: "4D434850-9327-45DE-8882-C97F39028A76")
+}
